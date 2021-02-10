@@ -1,6 +1,7 @@
 use pocket::{add::PocketAddRequest, Pocket};
 use std::error::Error;
 use url::Url;
+use tokio;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {

@@ -1,9 +1,12 @@
+extern crate hyper;
+
 use crate::errors::PocketError;
 use crate::headers::{HEADER_XACCEPT, HEADER_XERROR, HEADER_XERROR_CODE};
 use crate::PocketResult;
-use bytes::buf::BufExt as _;
+use bytes::Buf;
 use futures::TryFutureExt;
-use hyper::client::{Client, HttpConnector};
+use hyper::Client;
+use hyper::client::HttpConnector;
 use hyper::Body;
 use hyper::Method;
 use hyper::Request;

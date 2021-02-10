@@ -1,4 +1,4 @@
-use hyper::error::Error as HttpError;
+use hyper::Error as HttpError;
 use std::io::Error as IoError;
 use thiserror::Error;
 

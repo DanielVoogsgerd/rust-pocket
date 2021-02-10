@@ -2,6 +2,7 @@ extern crate pocket;
 
 use pocket::{get::PocketGetRequest, Pocket};
 use std::error::Error;
+use tokio;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
